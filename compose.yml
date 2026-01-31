@@ -1,0 +1,13 @@
+services:
+  cpp:
+    image: cpp-centos-dev:stream9
+    platform: linux/amd64
+    tty: true
+    stdin_open: true
+    volumes:
+      - DockerVolume:/workspace
+    working_dir: /workspace
+    command: /bin/bash
+
+volumes:
+  DockerVolume:
